@@ -139,7 +139,7 @@ public class NivelamentoFaculdade {
 		 * final, mostre a diferença do maior valor para o menor.
 		 */
 		
-		int nX;
+		/* int nX;
 		int nY;
 		
 		System.out.println("Enter the first number:");
@@ -149,9 +149,173 @@ public class NivelamentoFaculdade {
 		nY = sc.nextInt();
 		
 		if (nX > nY) 
-			System.out.print(nX - nY);
+			System.out.printf("%d is higgest, difference: %d", nX, (nX - nY));
 		else if (nY > nX)
-			System.out.printf("difference:   nY - nX);
-		sc.close();
+			System.out.printf("%d is higgest, difference: %d", nY, (nY - nX));
+		else 
+			System.out.printf("same numbers");
+		*/ 
+		
+		/* Desenvolva um algoritmo que receba um número e escreva a mensagem
+         * VALOR POSITIVO caso o número seja igual ou maior que zero e escreva a
+         * mensagem VALOR NEGATIVO caso o número seja menor do que zero. 
+		*/
+		
+	 /*	double n;
+		
+		System.out.printf("Please insert number bellow: ");
+		
+		n = sc.nextDouble();
+		
+		if (n >= 0) 
+			System.out.printf("Numero positivo");
+		else 
+			System.out.printf("Numero negativo");
+	*/
+		
+		/* Desenvolva um algoritmo que leia o sexo (M ou F) e a altura de uma pessoa
+		 * e imprima o peso ideal. (GUIMARÃES; LAGES, 1994).
+         * Dados:
+         * ○ Peso ideal para o sexo masculino: altura (cm) * 0.95 – 95
+         * ○ Peso ideal para o sexo feminino: altura (cm) * 0.85 – 85
+		 * 
+		 */
+		
+		/*
+		
+		System.out.print("Enter you gender (M/F): ");
+		char gender = sc.next().charAt(0);
+		
+		Locale.setDefault(Locale.US); 
+		System.out.println("Enter you height in cm");
+		String heightStr = sc.next();
+        double height = Double.parseDouble(heightStr);
+		
+		double idealWeight = 0;
+		
+		if (gender == 'M' || gender == 'm') {
+			idealWeight = height * 0.95 - 95;
+		} else if (gender =='F' || gender == 'f') {
+			idealWeight = height * 0.85 - 85;
+		} else 
+			System.out.println("Meu parceiro, provavelmente voce eh um robo");
+			
+		System.out.printf("Your ideal weight is: %.2f kg%n", idealWeight);
+		*/
+		
+		/* Desenvolva um algoritmo que leia uma letra. Se a letra for uma vogal,
+		 * imprimir a mensagem “VOGAL”, caso contrário, imprimir a mensagem
+         * “CONSOANTE”. 
+		 */
+		
+		
+		
+	/*	System.out.println("eae comparsa, bem vindo ao verificador de vogais/consoantes. ");
+		System.out.println("Por favor, insira a baixo a porra da sua letra: ");
+				
+		char vogais = sc.next().charAt(0);
+		
+		if (vogais == 'a' ||vogais == 'A' || vogais == 'e' || vogais == 'E' || vogais == 'i' || vogais == 'I' || vogais == 'o' || vogais == 'O' || vogais =='u' || vogais =='U')
+			 System.out.printf("é uma vogal");
+		else 
+			System.out.printf("É consoante, burro");
+		*/
+		
+		
+	/* Desenvolva um algoritmo para ler duas notas de um aluno e calcular a sua
+     * média. Após o cálculo, verifique a situação do aluno de acordo com os
+	 * critérios abaixo:
+       ● Se a média aritmética das notas for maior ou igual a 7,0, deve ser
+         apresentada a mensagem ALUNO ESTÁ APROVADO;
+       ● Se a média for maior ou igual a 5,0 e menor do que 7,0, deve aparecer a
+         mensagem ALUNO ESTÁ EM RECUPERAÇÃO;
+       ● Se a média for menor do que 5,0, deve aparecer a mensagem ALUNO ESTÁ REPROVADO.
+	 * 	
+	 */
+	/*	double nota1;
+		double nota2;
+		
+		
+		
+		System.out.println("Bem vindo ao sistema escolar");
+		System.out.println("Insira abaixo, a nota do aluno: ");
+		
+		nota1 = sc.nextDouble();
+		
+		
+		System.out.println("Insira abaixo, a segunda nota do aluno: ");
+		nota2 = sc.nextDouble();
+		
+		double media = (nota1 + nota2) / 2;
+		
+		
+		System.out.println("Calculando, aguarde...");
+		
+		if (media >= 7)
+		 System.out.printf("Eita, aprovado!!!");
+		 
+		else if (media >= 5)
+		 System.out.printf("Eita, recuperação!!!");
+		
+		else 
+		 System.out.printf("Parabéns burrinho, vai ter que fazer tudo dnv");
+		 
+	*/
+		
+		/* 
+		 * Escreva um algoritmo que leia três valores inteiros e diferentes e mostre-os
+		    em ordem decrescente. */
+		
+		
+        int n1, n2, n3;
+        
+        System.out.println("Bem vindo ao meu programa, por gentileza... Digite três números");
+        System.out.println("Insira o primeiro número:");
+        n1 = sc.nextInt();
+        
+        System.out.println("Insira o segundo número:");
+        n2 = sc.nextInt();
+        
+        System.out.println("Insira o terceiro número:");
+        n3 = sc.nextInt();
+        
+        int maior, meio, menor;
+        
+        if (n1 > n2 && n1 > n3) {
+            maior = n1;
+            if (n2 > n3){
+                meio = n2;
+                menor = n3;
+            } else {
+                meio = n3;
+                menor = n2;
+            }
+        } else if (n2 > n1 && n2 > n3) {
+            maior = n2;
+            if (n1 > n3) {
+                meio = n1;
+                menor = n3;
+            } else {
+                meio = n3;
+                menor = n1;
+            }
+        } else {
+            maior = n3;
+            if (n1 > n2) {
+                meio = n1;
+                menor = n2;
+            } else {
+                meio = n2;
+                menor = n1;
+            }
+        }
+        
+        System.out.printf("Em ordem descrecente o menor número é %d, o segundo menor é %d, o maior é %d", menor, meio, maior);
+        
+        sc.close();
+    }
+
+
+		
 }
-}
+
