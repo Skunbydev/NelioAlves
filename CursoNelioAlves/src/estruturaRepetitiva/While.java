@@ -8,14 +8,20 @@ public class While {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner (System.in);
 		
-		int x = sc.nextInt();
 		
 		int soma = 0;
+		
+		int x = sc.nextInt();
+		
 		while (x != 0) {
-			x = sc.nextInt();
 			soma += x;
+			x = sc.nextInt();
 		}
-		System.out.printf("A soma total é de %d", soma);
+		
+		
+		System.out.printf("A soma total dos seus números é: %d", soma);
+		
+		
 		sc.close();
 	}
 
