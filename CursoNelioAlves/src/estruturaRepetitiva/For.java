@@ -12,9 +12,9 @@ public class For {
 		 */
 		
 		Scanner sc = new Scanner (System.in);
-		
-		
 		/*
+		
+		
 		int N = sc.nextInt();
 		int soma = 0;
 		for (int i = 0; i <N;  i = i+1) {
@@ -22,8 +22,8 @@ public class For {
 			soma += x;
 		}
 		System.out.println(soma);
-		*/
 		
+		*/
 		/*
 		int N = sc.nextInt();
 		int soma = 0;
@@ -38,7 +38,7 @@ public class For {
 		 * contagem regreesiva 
 		 */
 		
-		for (int i = 4; i >= 0; i--) {
+		for (int i = 10; i >= 0; i--) {
 			System.out.println("Valor de i: "+i);
 			
 		}
