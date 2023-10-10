@@ -13,7 +13,7 @@ public class MembrosEstaticos {
 		// TODO Auto-generated method stub
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+		System.out.println();
 		System.out.println("Enter Radius: ");
 		double radius = sc.nextDouble();
 		
