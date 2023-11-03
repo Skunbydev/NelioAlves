@@ -11,8 +11,8 @@ public class Program {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
-		
+
+		System.out.println("teste");
 		System.out.println("Enter product data: ");
 		System.out.print("Name: ");
 		String name = sc.nextLine();
