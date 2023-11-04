@@ -25,7 +25,7 @@ public class Exer05 {
         for (int i = 1; i < vect.length; i++) {
             if (vect[i]  > vectMaior) {
                 vectMaior = vect[i];
-                posMaior = i + 1;
+                posMaior = i;
             }
         }
         System.out.println(vectMaior);
