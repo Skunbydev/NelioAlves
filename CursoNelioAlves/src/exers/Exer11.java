@@ -26,6 +26,7 @@ public class Exer11 {
             System.out.println();
             nome[i] = sc.nextLine();
             System.out.println("Agora, a altura: ");
+            
 
 
         }
